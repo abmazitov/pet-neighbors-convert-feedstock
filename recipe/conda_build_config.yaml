@@ -6,5 +6,5 @@ MACOSX_DEPLOYMENT_TARGET:        # [osx]
   - "13.3"                # [osx]
 
 channel_targets:
-  - abmazitov main
+  - metatensor main
 
