@@ -14,7 +14,7 @@ build:
   skip: true  # [win]
   number: 0
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  string: py{{ CONDA_PY }}_h{{ PKG_HASH }}_{{ build }}
+  string: py{{ CONDA_PY }}_h{{ PKG_HASH }}
 
 
 requirements:
