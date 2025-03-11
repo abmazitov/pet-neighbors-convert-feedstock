@@ -14,6 +14,7 @@ build:
   skip: true  # [win]
   number: 0
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  string: py{{ CONDA_PY }}_h{{ PKG_HASH }}_{{ build }}
 
 
 requirements:
@@ -23,14 +24,14 @@ requirements:
     - make
     - cmake
   host:
-    - python {{ python_min }}
+    - python
     - setuptools >=68
     - setuptools-scm >=8
     - wheel
     - pip
     - pytorch
   run:
-    - python {{ python_min }}
+    - python
     - pytorch
 
 
@@ -38,7 +39,7 @@ test:
   imports:
     - pet_neighbors_convert
   requires:
-    - python {{ python_min }}
+    - python
 
 about:
   home: https://github.com/lab-cosmo/pet-neighbors-convert
