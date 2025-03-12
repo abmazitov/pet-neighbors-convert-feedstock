@@ -32,7 +32,7 @@ requirements:
     - pytorch =*=cpu*
   run:
     - python
-    - pytorch =*=cpu*
+    - pytorch
 
 
 test:
