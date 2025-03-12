@@ -29,15 +29,17 @@ requirements:
     - setuptools-scm >=8
     - wheel
     - pip
-    - pytorch
+    - pytorch =*=cpu*
   run:
     - python
-    - pytorch
+    - pytorch =*=cpu*
 
 
 test:
   imports:
     - pet_neighbors_convert
+  commands:
+    - pip check
   requires:
     - python
 
