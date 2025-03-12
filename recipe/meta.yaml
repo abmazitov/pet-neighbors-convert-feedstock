@@ -41,7 +41,7 @@ test:
   commands:
     - pip check
   requires:
-    - python
+    - pip
 
 about:
   home: https://github.com/lab-cosmo/pet-neighbors-convert
